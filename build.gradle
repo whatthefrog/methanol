@@ -38,6 +38,8 @@ ext {
       'autoService'    : '1.0.1',
       'jacksonXml'     : '2.12.3',
       'jacksonProtobuf': '2.13.0',
+      'jacksonAvro'    : '2.8.5',
+      'bson4jackson'   : '2.13.0',
   ]
 
   deps = [
@@ -76,7 +78,9 @@ ext {
       'autoServiceAnnotations' : "com.google.auto.service:auto-service-annotations:$versions.autoService",
       'autoServiceAnnProcessor': "com.google.auto.service:auto-service:$versions.autoService",
       'jacksonXml'             : "com.fasterxml.jackson.dataformat:jackson-dataformat-xml:$versions.jacksonXml",
-      'jacksonProtobuf'        : "com.fasterxml.jackson.dataformat:jackson-dataformat-protobuf:$versions.jacksonProtobuf"
+      'jacksonProtobuf'        : "com.fasterxml.jackson.dataformat:jackson-dataformat-protobuf:$versions.jacksonProtobuf",
+      'jacksonAvro'            : "com.fasterxml.jackson.dataformat:jackson-dataformat-avro:$versions.jacksonAvro",
+      'bson4jackson'           : "de.undercouch:bson4jackson:$versions.bson4jackson",
   ]
 
   isJavaProject = { project ->
